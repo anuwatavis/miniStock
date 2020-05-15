@@ -17,9 +17,9 @@ import { SettingComponent } from './pages/backend/setting/setting.component';
 import { LoginRegisterComponent } from './pages/login-register/login-register.component';
 import { SidebarComponent } from './shared/backend/sidebar/sidebar.component';
 import { FooterFrontComponent } from './shared/frontend/footer-front/footer-front.component';
-import { HeaderFrontComponent } from './shared/frontend/header-front/header-front.component';
 import { HeaderBackendComponent } from './shared/backend/header-backend/header-backend.component';
 import { FooterBackendComponent } from './shared/backend/footer-backend/footer-backend.component';
+import { HeaderFrontComponent } from './shared/frontend/header-front/header-front.component';
 
 @NgModule({
   declarations: [
@@ -38,9 +38,9 @@ import { FooterBackendComponent } from './shared/backend/footer-backend/footer-b
     LoginRegisterComponent,
     SidebarComponent,
     FooterFrontComponent,
-    HeaderFrontComponent,
     HeaderBackendComponent,
     FooterBackendComponent,
+    HeaderFrontComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
