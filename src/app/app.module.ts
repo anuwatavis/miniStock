@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,9 +15,11 @@ import { ReportComponent } from './pages/backend/report/report.component';
 import { UsersComponent } from './pages/backend/users/users.component';
 import { SettingComponent } from './pages/backend/setting/setting.component';
 import { LoginRegisterComponent } from './pages/login-register/login-register.component';
-import { HeaderComponent } from './shared/frontend/header/header.component';
-import { FooterComponent } from './shared/frontend/footer/footer.component';
 import { SidebarComponent } from './shared/backend/sidebar/sidebar.component';
+import { FooterFrontComponent } from './shared/frontend/footer-front/footer-front.component';
+import { HeaderFrontComponent } from './shared/frontend/header-front/header-front.component';
+import { HeaderBackendComponent } from './shared/backend/header-backend/header-backend.component';
+import { FooterBackendComponent } from './shared/backend/footer-backend/footer-backend.component';
 
 @NgModule({
   declarations: [
@@ -34,15 +36,14 @@ import { SidebarComponent } from './shared/backend/sidebar/sidebar.component';
     UsersComponent,
     SettingComponent,
     LoginRegisterComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterFrontComponent,
+    HeaderFrontComponent,
+    HeaderBackendComponent,
+    FooterBackendComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
