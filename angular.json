@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ministock"
+    }
+  },
+  "defaultProject": "ministock",
+  "cli": {
+    "analytics": false
+  }
 }
